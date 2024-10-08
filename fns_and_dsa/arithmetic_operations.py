@@ -9,6 +9,6 @@ def perform_operation(num1, num2, operation):
     try:
       return num1 / num2
     except ZeroDivisionError:
-      return -1
+      return f"The value {num2} is zero, so zero division error occured.."
   else:
     return "Invalid operation"
