@@ -14,7 +14,7 @@ def main():
 
         if choice == 1:
             # Prompt for and add an item
-            item = input('Enter the name of the item you want to add: ').lower()
+            item = input('Enter the item to add: ').lower()
             shopping_list.append(item)
             print(f'The item {item}, has been added to the shopping list successfully..')
             pass
