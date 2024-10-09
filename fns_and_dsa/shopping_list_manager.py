@@ -10,15 +10,15 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = input("Enter your choice: ")
+        choice = int(input("Enter your choice from 1 to 4: "))
 
-        if choice == '1':
+        if choice == 1:
             # Prompt for and add an item
             item = input('Enter the name of the item you want to add: ').lower()
             shopping_list.append(item)
             print(f'The item {item}, has been added to the shopping list successfully..')
             pass
-        elif choice == '2':
+        elif choice == 2:
             # Prompt for and remove an item
             item = input('Enter the name of the item you want to remove: ').lower()
             try:
@@ -28,7 +28,7 @@ def main():
             except ValueError:
               print(f'The item {item} is not in the shopping list.')
             pass
-        elif choice == '3':
+        elif choice == 3:
             # Display the shopping list
             if len(shopping_list) == 0:
                 print('There is nothing in the shopping list to display')
@@ -37,7 +37,7 @@ def main():
               for item in shopping_list:
                   print(item)
             pass
-        elif choice == '4':
+        elif choice == 4:
             print("Goodbye!")
             break
         else:
