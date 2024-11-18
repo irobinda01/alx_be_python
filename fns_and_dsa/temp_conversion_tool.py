@@ -19,6 +19,6 @@ if __name__ == "__main__":
       tem = float(input("Enter the temperature to be converted: "))
       print(f'{tem}{degree_symbol}F is {convert_to_celsius(tem)}{degree_symbol}C')
     else:
-      raise ValueError("Invalid temperature scale. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
+      raise ValueError("Invalid temperature. Please enter a numeric value.")
   except ValueError as e:
     print(f'Error: {e}')
