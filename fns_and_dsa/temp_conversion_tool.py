@@ -23,7 +23,7 @@ def convert_to_fahrenheit(celsius):
 
 if __name__ == "__main__":
   try:
-    tem_value = input("Enter the temperature to be converted: ")
+    tem_value = input("Enter the temperature to convert: ")
     temperature = validate_temperature(tem_value)
 
     check = input('Is this temperature in Celsius or Fahrenheit? (C/F): ')
