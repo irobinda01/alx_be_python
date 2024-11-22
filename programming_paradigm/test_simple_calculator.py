@@ -2,12 +2,12 @@ import unittest
 from simple_calculator import SimpleCalculator
 
 class TestSimpleCalculator(unittest.TestCase):
-  def test_add(self):
+  def test_addition(self):
     cal = SimpleCalculator()
     result = cal.add(5, 6)
     self.assertEqual(result, 11)
 
-  def test_subtract(self):
+  def test_subtraction(self):
     cal = SimpleCalculator()
     result = cal.subtract(7, 4)
     self.assertEqual(result, 3)
