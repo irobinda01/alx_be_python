@@ -1,5 +1,12 @@
 import unittest
-from simple_calculator import addition, subtraction, multiplication, division
+from simple_calculator import SimpleCalculator
+
+calculator = SimpleCalculator()
+
+addition = calculator.add
+subtraction = calculator.subtract
+multiplication = calculator.multiply
+division = calculator.divide
 
 class TestSimpleCalculator(unittest.TestCase):
   def test_addition(self):
