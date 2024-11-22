@@ -1,26 +1,18 @@
 import unittest
-from simple_calculator import SimpleCalculator
+from simple_calculator import addition, subtraction, multiplication, division
 
 class TestSimpleCalculator(unittest.TestCase):
   def test_addition(self):
-    cal = SimpleCalculator()
-    result = cal.add(5, 6)
-    self.assertEqual(result, 11)
+    self.assertEqual(addition(2, 5), 7)
 
   def test_subtraction(self):
-    cal = SimpleCalculator()
-    result = cal.subtract(7, 4)
-    self.assertEqual(result, 3)
+    self.assertEqual(subtraction(7, 3), 4)
 
   def test_multiply(self):
-    cal = SimpleCalculator()
-    result = cal.multiply(3, 4)
-    self.assertEqual(result, 12)
+    self.assertEqual(multiplication(3, 4), 12)
 
   def test_divide(self):
-    cal = SimpleCalculator()
-    result = cal.divide(4, 0)
-    self.assertEqual(result, None)
+    self.assertEqual(division(4, 0), None)
 
 
 if __name__ == "__main__":
