@@ -18,11 +18,3 @@ class SimpleCalculator:
         if b == 0:
             return None
         return a / b
-    
-
-calculator = SimpleCalculator()
-
-addition = calculator.add
-subtraction = calculator.subtract
-multiplication = calculator.multiply
-division = calculator.divide
