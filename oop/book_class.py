@@ -7,11 +7,11 @@ class Book:
 
     def __del__(self):
         """Destructor to indicate when a Book instance is deleted."""
-        print(f"Deleting '{self.title}'")
+        print(f"Deleting {self.title}")
 
     def __str__(self):
         """Returns an informal string representation of the book."""
-        return f"'{self.title}' by {self.author}, published in {self.year}"
+        return f"{self.title} by {self.author}, published in {self.year}"
 
     def __repr__(self):
         """Returns an official string representation of the book."""
